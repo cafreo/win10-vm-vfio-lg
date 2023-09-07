@@ -1,5 +1,6 @@
 #! /bin/sh
 #kitty -e sudo systemctl restart libvirtd
 #wait
-kitty -e sudo -S virsh start win10
+#sudo chmod 666 /dev/vfio/vfio &&
+kitty -e --title "Looking Glass win10VM" sudo -S virsh start win10;
 looking-glass-client
