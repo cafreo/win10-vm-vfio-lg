@@ -2,9 +2,9 @@ ACTION=="bind", \
   SUBSYSTEM=="usb", \
   ENV{ID_VENDOR_ID}=="045e", \
   ENV{ID_MODEL_ID}=="028e", \
-  RUN+="/home/cafreo/Scripts/VM/xboxc-usb.sh attach"
+  RUN+="/home/cafreo/.config/vm/scripts/xboxc-usb.sh attach"
 ACTION=="remove", \
   SUBSYSTEM=="usb", \
   ENV{ID_VENDOR_ID}=="045e", \
   ENV{ID_MODEL_ID}=="028e", \
-  RUN+="/home/cafreo/Scripts/VM/xboxc-usb2.sh detach"
+  RUN+="/home/cafreo/.config/vm/scpripts/xboxc-usb.sh detach"
